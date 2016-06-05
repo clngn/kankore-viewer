@@ -1,2 +1,4 @@
 PepperFlash
 node_modules
+packages
+*.asar
