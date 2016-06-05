@@ -19,7 +19,7 @@ function createWindow() {
   })
 }
 
-app.commandLine.appendSwitch('ppapi-flash-path', './lib/PepperFlash/PepperFlashPlayer.plugin');
+app.commandLine.appendSwitch('ppapi-flash-path', __dirname + '/lib/PepperFlash/PepperFlashPlayer.plugin');
 app.commandLine.appendSwitch('ppapi-flash-version', '21.0.0.242');
 
 app.on('ready', createWindow);
