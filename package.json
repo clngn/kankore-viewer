@@ -5,8 +5,7 @@
   "main": "src/main.js",
   "scripts": {
     "start": "electron src/main.js",
-    "asar": "asar pack . kankore.asar  --unpack-dir 'packages'",
-    "package": "electron-packager . kankore --out=packages --platform=darwin --arch=x64 --ignore=packages/*  --asar --overwrite"
+    "package": "electron-packager . kankore --out=packages --platform=darwin --arch=x64 --ignore=packages/* --overwrite"
   },
   "author": "clngn",
   "license": "MIT",
