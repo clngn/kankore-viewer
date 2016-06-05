@@ -1,11 +1,12 @@
 {
-  "name": "kankore",
-  "version": "1.0.0",
+  "name": "kankore-viewer",
+  "version": "0.0.1",
   "description": "",
   "main": "src/main.js",
   "scripts": {
     "start": "electron src/main.js",
-    "package": "electron-packager . kankore --out=packages --platform=darwin --arch=x64 --ignore=packages/* --overwrite"
+    "crean": "rm -rf packages/kankore-viewer-darwin-x64",
+    "package": "electron-packager . kankore-viewer --out=packages --platform=darwin --arch=x64 --ignore=packages/* --overwrite && open ./packages/kankore-viewer-darwin-x64"
   },
   "author": "clngn",
   "license": "MIT",
