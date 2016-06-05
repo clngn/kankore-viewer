@@ -1,0 +1,18 @@
+{
+  "name": "kankore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js",
+    "pack": "asar pack . kankore.asar",
+    "build": "electron-packager . kankore --platform=darwin --arch=x64 --asar --overwrite"
+  },
+  "author": "clngn",
+  "license": "MIT",
+  "devDependencies": {
+    "asar": "^0.11.0",
+    "electron-packager": "^7.0.3",
+    "electron-prebuilt": "^1.1.1"
+  }
+}
